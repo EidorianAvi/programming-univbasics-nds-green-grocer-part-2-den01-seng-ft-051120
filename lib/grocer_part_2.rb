@@ -34,12 +34,13 @@ def consolidate_cart(cart)
 end
 
 #cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>2}]
-#coupons = [{:item=>"AVOCADO", :num=>2, :cost=>5.0}]
+#coupons = [{:item=>"AVOCADO", :num=>2, :cocost=>5.0}]
 
 def apply_coupons(cart, coupons)
   counter = 0 
   while counter < coupons.length do 
-    cart_item = 
+    cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
+    coupon_item_name = "#{coupons[counter][:item]} W/COUPON"
   counter += 1
   end
 end
