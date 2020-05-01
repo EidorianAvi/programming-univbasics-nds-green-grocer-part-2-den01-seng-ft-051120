@@ -1,7 +1,6 @@
-
-
 require_relative './part_1_solution.rb'
 require 'pry'
+
 def find_item_by_name_in_collection(name, collection)
   counter = 0 
   while counter < collection.length do
@@ -40,13 +39,11 @@ end
 def apply_coupons(cart, coupons)
   counter = 0 
   while counter < coupons.length do 
-    cart_item = find_item_by_name
+    cart_item = find_item_by_n
   counter += 1
   end
 end
 
-    
-end
 
 def apply_clearance(cart)
 
