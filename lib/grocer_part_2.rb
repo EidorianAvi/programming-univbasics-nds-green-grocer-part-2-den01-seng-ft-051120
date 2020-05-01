@@ -33,8 +33,6 @@ def consolidate_cart(cart)
   new_cart
 end
 
-#cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>2}]
-#coupons = [{:item=>"AVOCADO", :num=>2, :cocost=>5.0}]
 
 def apply_coupons(cart, coupons)
   counter = 0 
